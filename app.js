@@ -37,7 +37,7 @@
 
 
   //-------TASK 7----------
-  Done practicing in html file attached.
+  //Done practicing in html file attached.
 
 
 
@@ -155,11 +155,12 @@
 
   //illegal variables:
 
-  var & virus,
-  3 lma,
-  404e rror, -sss,
-  @halo;
-
+  ?
+  /* var & virus,
+    3 lma,
+    404e rror, -sss,
+    @halo;
+*/
   //    --------TASK 3---------
 
   document.write("<h1>Rules for naming JS variables</h1>");
@@ -826,7 +827,10 @@
 
 
   var manufacturers = ["Apple ", "Samsung ", " Motorola ", " Nokia ", "Sony ", "Haier "];
-  document.write("<select> <option>Apple</option><option>Samsung</option><option>Motorola</option><option>Nokia</option><option>Sony</option><option>Haier</option> </select>");
+  document.write("<select>");
+  for (vari = 0; i < manufacturers.length; i++)
+      document.write("<option> " + manufacturers[i] + " </option>")
+  document.write("</select>");
 
 
 
@@ -906,26 +910,21 @@
   //    --------TASK 6---------
 
   var i = 0;
-  document.write("<h1> COUNTING: </h1>")
-  for (i = 1; i <= 15; i++)
+  document.write("<h1> COUNTING: </h1>") for (i = 1; i <= 15; i++)
       document.write(i + " , ");
 
-  document.write("<h1> REVERSE COUNTING: </h1>")
-  for (i = 10; i >= 1; i--)
+  document.write("<h1> REVERSE COUNTING: </h1>") for (i = 10; i >= 1; i--)
       document.write(i + " , ");
 
-  document.write("<h1> EVEN: </h1>")
-  for (i = 0; i <= 20; i += 2)
+  document.write("<h1> EVEN: </h1>") for (i = 0; i <= 20; i += 2)
       document.write(i + " , ");
 
 
-  document.write("<h1> ODD: </h1>")
-  for (i = 1; i <= 19; i += 2)
+  document.write("<h1> ODD: </h1>") for (i = 1; i <= 19; i += 2)
       document.write(i + " , ");
 
 
-  document.write("<h1> SERIES: </h1>")
-  for (i = 2; i <= 20; i += 2)
+  document.write("<h1> SERIES: </h1>") for (i = 2; i <= 20; i += 2)
       document.write(i + "k, ");
 
 
