@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- CHAPTER# 43-48 
+    //1. Show an alert box on click on a link.
+
+    <a href="#" onClick="alert('Hi');">Click </a> 
+
+    //2. On click on an image Show the message in alert to user.
+
+    <img src="https://images.ctfassets.net/d6skzop43my5/6OyxwWln6Ke5UuX8hHLzZZ/5ae77b5f60dada8a8be63a0102ac7e45/nokia_5_3-front-cyan.png?q=50" width="350" height="350" onClick="thanksUser();">
+    <img src="https://www.91-img.com/pictures/133188-v4-oppo-f11-mobile-phone-large-1.jpg" width="300" height="350" onClick="thanksUser();">
+    <img src="https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/APMWVG2FE_F_apple_iphone_11_case_clear.jpg" width="350" height="350" onClick="thanksUser();">
+    <img src=" https://images.samsung.com/is/image/samsung/pk-galaxy-a71-a715-sm-a715fzbgpak-front-thumb-206983834 " width="350 " height="350 " onClick="thanksUser();">
+    
+
+    //3.
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+
+            <td>John</td>
+            <td>10</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+
+            <td>Doe</td>
+            <td>9</td>
+            <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+        </tr>
+        <tr>
+
+            <td>Mark</td>
+            <td>10</td>
+            <td><input type="button" value="Delete Row " onclick="SomeDeleteRowFunction(this) "></td>
+        </tr>
+        <tr>
+
+            <td>James</td>
+            <td>8</td>
+            <td><input type="button" value="Delete Row " onclick="SomeDeleteRowFunction(this) "></td>
+
+        </tr>
+    </table>
+    
+    //4.
+    <img src="anahita.jpg" onmouseover="changePic(this)" onmouseout="returnPic(this)" height="500px" width="800px">
+    
+    //5.
+    <h1 id="para">0
+    </h1>
+    <button id="increase">+</button> <button id="decrease">-</button> 
+    
+    //CH 49-52 
+    
+    //1.
+    <form id="myForm">
+        Name: <input type="text" name="fname" id="fname" value="Elma"><br> Number: <input type="text" name="num" id="num" value="03313779300"><br> Email: <input type="text" name="email" id="email " value="elma.rizwan12@gmail.com"><br>
+    </form>
+
+    <button onclick="myFunction()">Submit</button> 
+    
+    
+    //2.
+    <p>hello to my new website here are some exciting features below,click read more to know more details<span id="dots">...</span><span id="more">fhjgmhjhgjgcghjgnvhjbvbvghvbhgnghgncghghmcnghggnc</span></p>
+    <a onclick="readFunction()" id="myLink">Read More</a>
+
+//CHAPTER# 52-57
+
+//1.
+
+    <div>
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/13.jpg" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/14.png" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/15.jpg" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/11.jpg" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/10.jpg" alt="">
+    </div>
+
+    //Modal
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="bigImage" src="" alt="" id="modalImage" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    //2. 
+    <p id="myp">Help Desk Session # 5 part 2 Saylani Welfare was live in Web & Mobile Hybrid App Development Course (Saylani).Help Desk Session # 5 part 2 ÔÃ²¡  ÿÿ  ¨Üo?¯ \ \ 0Áaëí tO6# E Ný € À¨fÀ¨hî ¡ :eø00 public #û  00+ 
+         ¨Üo?Yñ ] ] tO6# 0Áaëí E Oí¢ ÝÀ¨hÀ¨f ¡î ;Sò01 public¢$û  00+  «Üo?×Ö> > %Ú¯s tO6# E 0 @ € À¨f€wõï Pþ7óé púðM; ´«Üo?ñ% > > tO6# %Ú¯s E 0 @ 76€wõÀ¨f Pï‘Gsþ7óêpÐ„ ´«Üo?&
+        6 6 %Ú¯s tO6# E (@ € À¨f€wõï Pþ7óê‘GtPúð7­ «Üo?. ; ; %Ú¯s tO6# E -@ € À¨f€wõï Pþ7óê‘GtPúð9² GET /ethereal-labs/protected_pages/lab2-5.html HTTP/1.1 Host: gaia.cs.umass.edu User-Agent: Mozilla/5.0 (Windo
+    </p>
+    <button type="button" onclick="zoomin()" class="btn btn-primary">Zoom In(+)</button>
+    <button type="button" onclick="zoomout()" class="btn btn-primary">Zoom Out(-)</button>
+
+//CHAPTER# 58-67
+
+//1. & 2.
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="firstname" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render">contact : +92 300 1234567</p>
+        </div>
+    </div>
+-->
+    <div>
+        <input type="text" name="names" id="names">
+        <input type="text" name="grade" id="grade">
+        <button onclick="add()">Add Student</button>
+        <button onclick="deleteAll()">Delete All</button>
+
+    </div>
+    <div>
+        <table id="myTable">
+
+        </table>
+    </div>
+
+    <script src="app3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
